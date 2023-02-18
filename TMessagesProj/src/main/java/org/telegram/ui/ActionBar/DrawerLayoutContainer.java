@@ -45,7 +45,7 @@ import org.telegram.messenger.R;
 import org.telegram.messenger.Utilities;
 import org.telegram.ui.Components.PasscodeView;
 
-import top.qwq2333.nullgram.utils.Log;
+import xyz.nextalone.nnngram.utils.Log;
 
 public class DrawerLayoutContainer extends FrameLayout {
 

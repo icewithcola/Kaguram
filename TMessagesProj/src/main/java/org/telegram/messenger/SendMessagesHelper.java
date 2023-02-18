@@ -113,8 +113,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import kotlin.Pair;
-import top.qwq2333.gen.Config;
-import top.qwq2333.nullgram.utils.StringUtils;
+import xyz.nextalone.gen.Config;
+import xyz.nextalone.nnngram.utils.StringUtils;
 
 public class SendMessagesHelper extends BaseController implements NotificationCenter.NotificationCenterDelegate {
 
