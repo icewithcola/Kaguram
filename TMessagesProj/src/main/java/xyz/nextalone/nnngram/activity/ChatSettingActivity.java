@@ -118,6 +118,7 @@ public class ChatSettingActivity extends BaseActivity {
     private int disableStickersAutoReorderRow;
     private int hideTitleRow;
     private int messageFiltersRow;
+    private int doNotUnarchiveBySwipeRow;
     private int chat2Row;
 
     private int markdownRow;
@@ -365,6 +366,11 @@ public class ChatSettingActivity extends BaseActivity {
             }
         } else if (position == messageFiltersRow) {
             createMessageFilterSetter(this, getContext(), resourcesProvider);
+        } else if (position == doNotUnarchiveBySwipeRow) {
+            Config.toggleDoNotUnarchiveBySwipe();
+            if (view instanceof TextCheckCell) {
+                ((TextCheckCell) view).setChecked(Config.doNotUnarchiveBySwipe);
+            }
         }
     }
 
@@ -417,6 +423,7 @@ public class ChatSettingActivity extends BaseActivity {
         disableStickersAutoReorderRow = addRow("disableStickersAutoReorder");
         hideTitleRow = addRow("showHideTitle");
         messageFiltersRow = addRow("messageFilters");
+        doNotUnarchiveBySwipeRow = addRow("doNotUnarchiveBySwipe");
         chat2Row = addRow();
         markdownRow = addRow();
         markdownDisableRow = addRow("markdownDisabled");
@@ -554,6 +561,8 @@ public class ChatSettingActivity extends BaseActivity {
                         textCell.setTextAndCheck(LocaleController.getString("MarkdownDisableByDefault", R.string.MarkdownDisableByDefault), Config.markdownDisabled, true);
                     } else if (position == hideTitleRow) {
                         textCell.setTextAndCheck(LocaleController.getString("showHideTitle", R.string.showHideTitle), Config.showHideTitle, true);
+                    } else if (position == doNotUnarchiveBySwipeRow) {
+                        textCell.setTextAndCheck(LocaleController.getString("doNotUnarchiveBySwipe", R.string.doNotUnarchiveBySwipe), Config.doNotUnarchiveBySwipe, true);
                     }
                     break;
                 }
