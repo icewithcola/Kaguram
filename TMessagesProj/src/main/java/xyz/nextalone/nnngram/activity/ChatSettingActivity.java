@@ -125,6 +125,7 @@ public class ChatSettingActivity extends BaseActivity {
     private int showOnlineStatusRow;
     private int disablePhotoSideActionRow;
     private int mergeMessageRow;
+    private int filterZalgoRow;
     private int chat2Row;
 
     private int markdownRow;
@@ -407,6 +408,11 @@ public class ChatSettingActivity extends BaseActivity {
             if (view instanceof TextCheckCell) {
                 ((TextCheckCell) view).setChecked(Config.mergeMessage);
             }
+        } else if (position == filterZalgoRow) {
+            Config.toggleFilterZalgo();
+            if (view instanceof TextCheckCell) {
+                ((TextCheckCell) view).setChecked(Config.filterZalgo);
+            }
         }
     }
 
@@ -466,6 +472,7 @@ public class ChatSettingActivity extends BaseActivity {
         showOnlineStatusRow = addRow("showOnlineStatus");
         disablePhotoSideActionRow = addRow("disablePhotoSideAction");
         mergeMessageRow = addRow("mergeMessage");
+        filterZalgoRow = addRow("filterZalgo");
         chat2Row = addRow();
         markdownRow = addRow();
         markdownDisableRow = addRow("markdownDisabled");
@@ -617,6 +624,8 @@ public class ChatSettingActivity extends BaseActivity {
                         textCell.setTextAndCheck(LocaleController.getString("disablePhotoSideAction", R.string.disablePhotoSideAction), Config.disablePhotoSideAction, true);
                     } else if (position == mergeMessageRow) {
                         textCell.setTextAndCheck(LocaleController.getString("MergeMessage", R.string.MergeMessage), Config.mergeMessage, true);
+                    } else if (position == filterZalgoRow) {
+                        textCell.setTextAndCheck(LocaleController.getString("filterZalgo", R.string.filterZalgo), Config.filterZalgo, true);
                     }
                     break;
                 }
