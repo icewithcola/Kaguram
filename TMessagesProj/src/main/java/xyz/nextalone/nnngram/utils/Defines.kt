@@ -211,6 +211,7 @@ object Defines {
     @StringConfig("Nnngram") const val customTitle = "customTitle"
     @StringConfig("") const val textStyleSettings = "textStyleSettings"
     @BooleanConfig const val hideSendAsButton = "hideSendAsButton"
+    @BooleanConfig const val hideFilterMuteAll = "hideFilterMuteAll"
 
     // Drawer List
     @BooleanConfig(true) const val showNewGroup = "showNewGroup"
