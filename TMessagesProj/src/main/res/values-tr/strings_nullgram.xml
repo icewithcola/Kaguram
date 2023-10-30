@@ -27,7 +27,7 @@
     <string name="ViewSourceCode">Kaynak Kodunu Görüntüle</string>
     <string name="Categories">Kategoriler</string>
     <string name="About">Hakkında</string>
-    <string name="OfficialChannelName">NullgramClient</string>
+    <string name="OfficialChannelName">nagram_group</string>
     <string name="noAvailableUpdate">Güncelleme Yok.</string>
     <string name="updateAvailable">Yeni Güncelleştirme Mevcut</string>
     <string name="variantsNotFound">Sürüm varyantları otomatik olarak eşleşmiyor.\nLütfen GitHub\'dan manuel olarak indirin.</string>
@@ -328,7 +328,7 @@
     <string name="MonoCode">Kod</string>
     <string name="CreateCode">Kod Oluştur </string>
     <string name="CreateCodeLanguage">Dil</string>
-    <string name="UnsupportedMediaNullgram">Bu mesaj Nullgram sürümünüzde desteklenmiyor. Görüntülemek için uygulamayı güncelleyin: https://t.me/NullgramClient</string>
+    <string name="UnsupportedMediaNullgram">Bu mesaj Nullgram sürümünüzde desteklenmiyor. Görüntülemek için uygulamayı güncelleyin: https://t.me/nagram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">Kullanıcı tarafından ayarlanan yanıt rengini yoksay</string>
     <string name="ShowTitle">Başlığı göster</string>
     <string name="HideTitle">Başlığı gizle </string>

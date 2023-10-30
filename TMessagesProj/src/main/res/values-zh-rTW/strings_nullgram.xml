@@ -27,7 +27,7 @@
     <string name="ViewSourceCode">檢視原始碼</string>
     <string name="Categories">分類</string>
     <string name="About">關於</string>
-    <string name="OfficialChannelName">NullgramClient</string>
+    <string name="OfficialChannelName">nagram_group</string>
     <string name="noAvailableUpdate">無可用更新</string>
     <string name="updateAvailable">新更新可用</string>
     <string name="variantsNotFound">發佈變量無法自動匹配。\n請從 GitHub 手動下載。</string>
@@ -330,7 +330,7 @@
     <string name="MonoCode">代碼</string>
     <string name="CreateCode">創建代碼</string>
     <string name="CreateCodeLanguage">語言</string>
-    <string name="UnsupportedMediaNullgram">您的 Nullgram 版本不支援此訊息。請更新應用程式以查看：https://t.me/NullgramClient</string>
+    <string name="UnsupportedMediaNullgram">您的 Nullgram 版本不支援此訊息。請更新應用程式以查看：https://t.me/nagram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">忽略用戶設定的回覆顏色</string>
     <string name="ShowTitle">顯示標題</string>
     <string name="HideTitle">隱藏標題</string>

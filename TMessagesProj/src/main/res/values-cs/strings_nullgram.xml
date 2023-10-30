@@ -27,7 +27,7 @@
     <string name="ViewSourceCode">Zobrazit zdrojový kód</string>
     <string name="Categories">Kategorie</string>
     <string name="About">Informace</string>
-    <string name="OfficialChannelName">NullgramClient</string>
+    <string name="OfficialChannelName">nagram_group</string>
     <string name="noAvailableUpdate">Žádné aktualizace.</string>
     <string name="updateAvailable">Nová aktualizace k dispozici</string>
     <string name="variantsNotFound">Varianty vydání se neshodují automaticky. Stáhněte si je prosím ručně z GitHubu.</string>
@@ -328,7 +328,7 @@
     <string name="MonoCode">Code</string>
     <string name="CreateCode">Create Code</string>
     <string name="CreateCodeLanguage">Language</string>
-    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/NullgramClient</string>
+    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/nagram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">Ignore user-set reply color</string>
     <string name="ShowTitle">Show title</string>
     <string name="HideTitle">Hide title</string>

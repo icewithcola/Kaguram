@@ -327,7 +327,7 @@
     <string name="CreateCode">コードを作成</string>
     <string name="CreateCodeLanguage">言語</string>
     <string name="UnsupportedMediaNullgram">このメッセージはお使いのバージョンのNullgramではサポートされていません。表示するにはアプリをアップデートしてください:
-https://t.me/NullgramClient</string>
+https://t.me/nagram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">ユーザーが設定した返信の色を無視</string>
     <string name="ShowTitle">タイトルを表示</string>
     <string name="HideTitle">タイトルを非表示</string>

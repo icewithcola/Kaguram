@@ -27,7 +27,7 @@
     <string name="ViewSourceCode">Manba kodini ko\'rish</string>
     <string name="Categories">Kategoriyalar</string>
     <string name="About">Haqida</string>
-    <string name="OfficialChannelName">NullgramClient</string>
+    <string name="OfficialChannelName">nagram_group</string>
     <string name="noAvailableUpdate">Sizda oxirgi versiya</string>
     <string name="updateAvailable">Yangilanish mavjud</string>
     <string name="variantsNotFound">Release variants fail to match automatically.\nPlease download manually from GitHub.</string>
@@ -328,7 +328,7 @@
     <string name="MonoCode">Code</string>
     <string name="CreateCode">Create Code</string>
     <string name="CreateCodeLanguage">Language</string>
-    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/NullgramClient</string>
+    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/nagram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">Ignore user-set reply color</string>
     <string name="ShowTitle">Show title</string>
     <string name="HideTitle">Hide title</string>

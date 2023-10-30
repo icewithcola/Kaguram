@@ -27,7 +27,7 @@
     <string name="ViewSourceCode">Показать исходный код</string>
     <string name="Categories">Категории</string>
     <string name="About">О нас</string>
-    <string name="OfficialChannelName">NullgramClient</string>
+    <string name="OfficialChannelName">nagram_group</string>
     <string name="noAvailableUpdate">Новые обновления отсутствуют.</string>
     <string name="updateAvailable">Доступно обновление</string>
     <string name="variantsNotFound">Версия приложения не совпадает с последней \nПожалуйста скачайте вручную с GitHub.</string>
@@ -329,7 +329,7 @@
     <string name="MonoCode">Code</string>
     <string name="CreateCode">Create Code</string>
     <string name="CreateCodeLanguage">Language</string>
-    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/NullgramClient</string>
+    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/nagram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">Ignore user-set reply color</string>
     <string name="ShowTitle">Show title</string>
     <string name="HideTitle">Hide title</string>
