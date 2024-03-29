@@ -214,6 +214,7 @@ object Defines {
     @BooleanConfig const val hideFilterMuteAll = "hideFilterMuteAll"
     @BooleanConfig const val hideKeyboardWhenScrolling = "hideKeyboardWhenScrolling"
     @BooleanConfig const val searchInPlace =  "searchInPlace"
+    @IntConfig(100) const val gifSize = "gifSize"
 
     // Drawer List
     @BooleanConfig(true) const val showNewGroup = "showNewGroup"
