@@ -8373,8 +8373,11 @@ public class PhotoViewer implements NotificationCenter.NotificationCenterDelegat
         } else {
             pipVideoOverlayAnimateFlag = false;
 
-            if (!Config.disableAutoPip)
+            if (!Config.disableAutoPip) {
                 switchToPip(false);
+            } else {
+                videoPlayer.pause();
+            }
         }
     }
 
