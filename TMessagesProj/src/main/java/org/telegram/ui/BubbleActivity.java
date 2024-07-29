@@ -36,7 +36,7 @@ import org.telegram.ui.Components.ThemeEditorView;
 
 import java.util.ArrayList;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class BubbleActivity extends BasePermissionsActivity implements INavigationLayout.INavigationLayoutDelegate {
 

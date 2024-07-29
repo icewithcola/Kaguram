@@ -40,8 +40,8 @@ import java.io.File;
 import java.util.Locale;
 
 import kotlin.Unit;
-import xyz.nextalone.nnngram.utils.APKUtils;
-import xyz.nextalone.nnngram.utils.UpdateUtils;
+import uk.kagurach.kaguram.utils.APKUtils;
+import uk.kagurach.kaguram.utils.UpdateUtils;
 
 public class BlockingUpdateView extends FrameLayout implements NotificationCenter.NotificationCenterDelegate {
 

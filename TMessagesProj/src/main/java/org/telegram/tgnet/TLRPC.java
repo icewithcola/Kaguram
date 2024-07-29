@@ -46,7 +46,7 @@ import org.telegram.ui.Stories.MessageMediaStoryFull_old;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import xyz.nextalone.nnngram.utils.Defines;
+import uk.kagurach.kaguram.utils.Defines;
 
 @SuppressWarnings("unchecked")
 public class TLRPC {

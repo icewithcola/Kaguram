@@ -224,14 +224,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import kotlin.Unit;
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.helpers.MonetHelper;
-import xyz.nextalone.nnngram.helpers.SettingsHelper;
-import xyz.nextalone.nnngram.utils.Defines;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.UpdateUtils;
-import xyz.nextalone.nnngram.utils.Utils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.helpers.MonetHelper;
+import uk.kagurach.kaguram.helpers.SettingsHelper;
+import uk.kagurach.kaguram.utils.Defines;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.UpdateUtils;
+import uk.kagurach.kaguram.utils.Utils;
 
 public class LaunchActivity extends BasePermissionsActivity implements INavigationLayout.INavigationLayoutDelegate, NotificationCenter.NotificationCenterDelegate, DialogsActivity.DialogsActivityDelegate {
     public final static String EXTRA_FORCE_NOT_INTERNAL_APPS = "force_not_internal_apps";

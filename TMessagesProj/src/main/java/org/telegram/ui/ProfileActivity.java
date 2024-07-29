@@ -306,20 +306,20 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 import kotlin.Unit;
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.InlinesKt;
-import xyz.nextalone.nnngram.activity.MainSettingActivity;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.helpers.TranslateHelper;
-import xyz.nextalone.nnngram.translate.LanguageDetectorTimeout;
-import xyz.nextalone.nnngram.ui.AutoTranslatePopupWrapper;
-import xyz.nextalone.nnngram.ui.BottomBuilder;
-import xyz.nextalone.nnngram.ui.SimpleTextViewSwitcher;
-import xyz.nextalone.nnngram.utils.AlertUtil;
-import xyz.nextalone.nnngram.utils.Defines;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.StringUtils;
-import xyz.nextalone.nnngram.utils.Utils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.InlinesKt;
+import uk.kagurach.kaguram.activity.MainSettingActivity;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.helpers.TranslateHelper;
+import uk.kagurach.kaguram.translate.LanguageDetectorTimeout;
+import uk.kagurach.kaguram.ui.AutoTranslatePopupWrapper;
+import uk.kagurach.kaguram.ui.BottomBuilder;
+import uk.kagurach.kaguram.ui.SimpleTextViewSwitcher;
+import uk.kagurach.kaguram.utils.AlertUtil;
+import uk.kagurach.kaguram.utils.Defines;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.StringUtils;
+import uk.kagurach.kaguram.utils.Utils;
 
 public class ProfileActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate, DialogsActivity.DialogsActivityDelegate, SharedMediaLayout.SharedMediaPreloaderDelegate, ImageUpdater.ImageUpdaterDelegate, SharedMediaLayout.Delegate {
     private final static int PHONE_OPTION_CALL = 0,

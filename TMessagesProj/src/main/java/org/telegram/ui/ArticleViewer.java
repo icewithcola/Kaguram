@@ -191,7 +191,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class ArticleViewer implements NotificationCenter.NotificationCenterDelegate {
 

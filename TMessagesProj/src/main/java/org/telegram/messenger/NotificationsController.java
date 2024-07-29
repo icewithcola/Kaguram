@@ -84,7 +84,6 @@ import org.telegram.ui.Components.AvatarDrawable;
 import org.telegram.ui.Components.spoilers.SpoilerEffect;
 import org.telegram.ui.LaunchActivity;
 import org.telegram.ui.PopupNotificationActivity;
-import org.telegram.ui.Stars.StarsIntroActivity;
 import org.telegram.ui.Stories.recorder.StoryEntry;
 
 import java.io.File;
@@ -103,8 +102,8 @@ import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.function.Consumer;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.helpers.PasscodeHelper;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.helpers.PasscodeHelper;
 
 public class NotificationsController extends BaseController {
 

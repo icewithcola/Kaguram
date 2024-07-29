@@ -51,7 +51,7 @@ develocity {
     }
 }
 
-rootProject.name = "Nnngram"
+rootProject.name = "Kaguram"
 include(
     ":TMessagesProj",
     ":libs:tcp2ws",

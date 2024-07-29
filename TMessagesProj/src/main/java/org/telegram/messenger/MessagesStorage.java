@@ -73,7 +73,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class MessagesStorage extends BaseController {
 

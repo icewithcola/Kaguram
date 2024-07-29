@@ -59,9 +59,7 @@ import java.util.Locale;
 import java.util.Stack;
 import java.util.concurrent.atomic.AtomicReference;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.utils.Defines;
+import uk.kagurach.gen.Config;
 
 public class SharedLinkCell extends FrameLayout {
     private final static int SPOILER_TYPE_LINK = 0,

@@ -236,13 +236,13 @@ import java.util.Objects;
 import java.util.Stack;
 import java.util.concurrent.atomic.AtomicReference;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.utils.Defines;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.NeteaseEmbed;
-import xyz.nextalone.nnngram.utils.StringUtils;
-import xyz.nextalone.nnngram.utils.Utils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.utils.Defines;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.NeteaseEmbed;
+import uk.kagurach.kaguram.utils.StringUtils;
+import uk.kagurach.kaguram.utils.Utils;
 
 public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate, ImageReceiver.ImageReceiverDelegate, DownloadController.FileDownloadProgressListener, TextSelectionHelper.SelectableView, NotificationCenter.NotificationCenterDelegate {
     private final static int TIME_APPEAR_MS = 200;

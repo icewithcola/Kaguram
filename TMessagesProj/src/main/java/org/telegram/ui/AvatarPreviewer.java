@@ -55,7 +55,7 @@ import org.telegram.ui.Stories.RoundRectOutlineProvider;
 import java.util.Collections;
 import java.util.Objects;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class AvatarPreviewer {
 

@@ -69,8 +69,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import xyz.nextalone.nnngram.activity.WsSettingsActivity;
-import xyz.nextalone.nnngram.helpers.WebSocketHelper;
+import uk.kagurach.kaguram.activity.WsSettingsActivity;
+import uk.kagurach.kaguram.helpers.WebSocketHelper;
 
 public class ProxyListActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
     private final static boolean IS_PROXY_ROTATION_AVAILABLE = true;

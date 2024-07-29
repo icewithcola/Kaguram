@@ -45,7 +45,6 @@ import android.provider.OpenableColumns;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.util.Base64;
-import android.util.Log;
 import android.util.SparseArray;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -93,7 +92,6 @@ import org.telegram.ui.PaymentFormActivity;
 import org.telegram.ui.Stories.MessageMediaStoryFull;
 import org.telegram.ui.TwoStepVerificationActivity;
 import org.telegram.ui.TwoStepVerificationSetupActivity;
-import org.telegram.ui.bots.BotWebViewSheet;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -101,7 +99,6 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -113,8 +110,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import kotlin.Pair;
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.utils.StringUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.StringUtils;
 
 public class SendMessagesHelper extends BaseController implements NotificationCenter.NotificationCenterDelegate {
 
@@ -1951,6 +1948,9 @@ public class SendMessagesHelper extends BaseController implements NotificationCe
             long lastGroupedId;
             for (int a = 0; a < messages.size(); a++) {
                 MessageObject msgObj = messages.get(a);
+                if (msgObj == null){
+                    continue;
+                }
                 if (msgObj.getId() <= 0 || msgObj.needDrawBluredPreview()) {
                     if (msgObj.type == MessageObject.TYPE_TEXT && !TextUtils.isEmpty(msgObj.messageText)) {
                         TLRPC.WebPage webPage = msgObj.messageOwner.media != null ? msgObj.messageOwner.media.webpage : null;

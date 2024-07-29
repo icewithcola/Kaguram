@@ -20,6 +20,7 @@
 package org.telegram.ui;
 
 import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.runOnUIThread;
 import static org.telegram.messenger.LocaleController.getString;
 
 import android.Manifest;
@@ -398,24 +399,24 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import kotlin.Unit;
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.activity.MessageDetailActivity;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.config.DialogConfig;
-import xyz.nextalone.nnngram.config.ForwardContext;
-import xyz.nextalone.nnngram.helpers.MessageHelper;
-import xyz.nextalone.nnngram.helpers.QrHelper;
-import xyz.nextalone.nnngram.helpers.TranslateHelper;
-import xyz.nextalone.nnngram.helpers.TranslateHelper.Status;
-import xyz.nextalone.nnngram.translate.LanguageDetectorTimeout;
-import xyz.nextalone.nnngram.ui.TranslatorSettingsPopupWrapper;
-import xyz.nextalone.nnngram.ui.sortList.items.TextStyleItems;
-import xyz.nextalone.nnngram.utils.Defines;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.MessageUtils;
-import xyz.nextalone.nnngram.utils.PermissionUtils;
-import xyz.nextalone.nnngram.utils.StringUtils;
-import xyz.nextalone.nnngram.utils.WordUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.activity.MessageDetailActivity;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.config.DialogConfig;
+import uk.kagurach.kaguram.config.ForwardContext;
+import uk.kagurach.kaguram.helpers.MessageHelper;
+import uk.kagurach.kaguram.helpers.QrHelper;
+import uk.kagurach.kaguram.helpers.TranslateHelper;
+import uk.kagurach.kaguram.helpers.TranslateHelper.Status;
+import uk.kagurach.kaguram.translate.LanguageDetectorTimeout;
+import uk.kagurach.kaguram.ui.TranslatorSettingsPopupWrapper;
+import uk.kagurach.kaguram.ui.sortList.items.TextStyleItems;
+import uk.kagurach.kaguram.utils.Defines;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.MessageUtils;
+import uk.kagurach.kaguram.utils.PermissionUtils;
+import uk.kagurach.kaguram.utils.StringUtils;
+import uk.kagurach.kaguram.utils.WordUtils;
 
 @SuppressWarnings("unchecked")
 public class ChatActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate, DialogsActivity.DialogsActivityDelegate, LocationActivity.LocationActivityDelegate, ChatAttachAlertDocumentLayout.DocumentSelectActivityDelegate, ChatActivityInterface, FloatingDebugProvider, ForwardContext, InstantCameraView.Delegate {
@@ -31937,7 +31938,18 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                 if (checkSlowMode(chatActivityEnterView.getSendButton())) {
                     return;
                 }
-                processRepeatMessage();
+                if (Config.confirmToRepeat){
+                    MessageObject selObj = selectedObject;
+                    MessageObject.GroupedMessages selObjGroup = selectedObjectGroup;
+                    MessageObject msgObj = getMessageUtils().getMessageForRepeat(selObj, selObjGroup);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity(), themeDelegate);
+                    builder.setMessage(LocaleController.getString("AreYouSureToRepeat", R.string.AreYouSureToRepeat));
+                    builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), (__, ___) -> processRepeatMessage(msgObj,selObj,selObjGroup));
+                    builder.setNegativeButton(LocaleController.getString("Cancel", R.string.Cancel), null );
+                    showDialog(builder.create());
+                } else {
+                    processRepeatMessage();
+                }
                 break;
             }
             case OPTION_REPEAT_AS_COPY: {
@@ -40217,6 +40229,78 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
 
     public boolean processRepeatMessage(boolean asCopy) {
         return processRepeatMessage(asCopy, false);
+    }
+
+    public boolean processRepeatMessage(MessageObject messageObject,MessageObject selectedObject,MessageObject.GroupedMessages selectedObjectGroup){ // Fix for confirm repeat
+        if (messageObject != null && (isThreadChat() && !isTopic) || getMessagesController().isChatNoForwards(currentChat)) {
+            var replyToMsg = threadMessageObject;
+            if (messageObject.isAnyKindOfSticker()
+                && !messageObject.isAnimatedEmojiStickers()
+                && !messageObject.isAnimatedEmoji()
+                && !messageObject.isDice()) {
+                Object parent = getMediaDataController().getStickerSetById(
+                    MediaDataController.getStickerSetId(selectedObject.getDocument()));
+                getSendMessagesHelper().sendSticker(
+                    selectedObject.getDocument(), null, dialog_id, replyToMsg,
+                    threadMessageObject, null, replyingQuote, null, true, 0, false, parent,
+                    quickReplyShortcut, getQuickReplyId());
+                return true;
+            } else {
+                String message;
+                ArrayList<TLRPC.MessageEntity> origin_entities;
+                if (messageObject.translated) {
+                    if (messageObject.originalMessage instanceof String) {
+                        message = (String) messageObject.originalMessage;
+                        origin_entities = messageObject.messageOwner.entities;
+                    } else if (messageObject.originalMessage instanceof Pair) {
+                        Pair<String, ArrayList<TLRPC.MessageEntity>> pair =
+                            (Pair<String, ArrayList<TLRPC.MessageEntity>>) messageObject.originalMessage;
+                        message = pair.first;
+                        origin_entities = pair.second;
+                    } else {
+                        message = messageObject.messageOwner.message;
+                        origin_entities = messageObject.messageOwner.entities;
+                    }
+                } else {
+                    message = messageObject.messageOwner.message;
+                    origin_entities = messageObject.messageOwner.entities;
+                }
+                if (!TextUtils.isEmpty(message)) {
+                    ArrayList<TLRPC.MessageEntity> entities;
+                    if (origin_entities != null && !origin_entities.isEmpty()) {
+                        entities = new ArrayList<>();
+                        for (TLRPC.MessageEntity entity : origin_entities) {
+                            if (entity instanceof TLRPC.TL_messageEntityMentionName) {
+                                TLRPC.TL_inputMessageEntityMentionName mention =
+                                    new TLRPC.TL_inputMessageEntityMentionName();
+                                mention.length = entity.length;
+                                mention.offset = entity.offset;
+                                mention.user_id = getMessagesController().getInputUser(
+                                    ((TLRPC.TL_messageEntityMentionName) entity).user_id);
+                                entities.add(mention);
+                            } else {
+                                entities.add(entity);
+                            }
+                        }
+                    } else {
+                        entities = null;
+                    }
+                    getSendMessagesHelper().sendMessage(
+                        SendMessageParams.of(message, dialog_id, replyToMsg, threadMessageObject,
+                            null, false, entities, null, null, true, 0, null, false));
+                    return true;
+                }
+            }
+        }else{
+            ArrayList<MessageObject> messages = new ArrayList<>();
+            if (selectedObjectGroup != null) {
+                messages.addAll(selectedObjectGroup.messages);
+            } else if (selectedObject != null) {
+                messages.add(selectedObject);
+            }
+            forwardMessages(messages, false, false, true, 0);
+        }
+        return false;
     }
 
     public boolean processRepeatMessage(boolean asCopy, boolean longClick) {

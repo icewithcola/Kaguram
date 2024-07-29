@@ -48,8 +48,8 @@ import org.telegram.ui.Components.SideMenultItemAnimator;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.helpers.PasscodeHelper;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.helpers.PasscodeHelper;
 
 public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
 

@@ -58,7 +58,7 @@ import org.telegram.ui.Stories.StoriesUtilities;
 
 import java.util.Locale;
 
-import xyz.nextalone.nnngram.utils.StringUtils;
+import uk.kagurach.kaguram.utils.StringUtils;
 
 public class ProfileSearchCell extends BaseCell implements NotificationCenter.NotificationCenterDelegate {
 

@@ -83,8 +83,8 @@ import org.telegram.ui.Components.URLSpanNoUnderline;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import xyz.nextalone.nnngram.helpers.QrHelper;
-import xyz.nextalone.nnngram.utils.PermissionUtils;
+import uk.kagurach.kaguram.helpers.QrHelper;
+import uk.kagurach.kaguram.utils.PermissionUtils;
 
 public class CameraScanActivity extends BaseFragment {
 

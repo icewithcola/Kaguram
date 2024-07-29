@@ -49,7 +49,7 @@ import org.telegram.ui.Components.RecyclerListView;
 import org.telegram.ui.Components.ReplyMessageLine;
 import org.telegram.ui.Components.spoilers.SpoilerEffect;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class TextMessageEnterTransition implements MessageEnterTransitionContainer.Transition {
     float fromRadius;

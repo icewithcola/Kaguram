@@ -190,17 +190,17 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 import kotlin.Unit;
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.InlinesKt;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.helpers.PasscodeHelper;
-import xyz.nextalone.nnngram.ui.BottomBuilder;
-import xyz.nextalone.nnngram.ui.EditTextAutoFill;
-import xyz.nextalone.nnngram.ui.QrView;
-import xyz.nextalone.nnngram.utils.AlertUtil;
-import xyz.nextalone.nnngram.utils.Defines;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.StringUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.InlinesKt;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.helpers.PasscodeHelper;
+import uk.kagurach.kaguram.ui.BottomBuilder;
+import uk.kagurach.kaguram.ui.EditTextAutoFill;
+import uk.kagurach.kaguram.ui.QrView;
+import uk.kagurach.kaguram.utils.AlertUtil;
+import uk.kagurach.kaguram.utils.Defines;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.StringUtils;
 
 @SuppressLint("HardwareIds")
 public class LoginActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
@@ -1338,10 +1338,10 @@ public class LoginActivity extends BaseFragment implements NotificationCenter.No
                 mailer.putExtra(Intent.EXTRA_EMAIL, new String[]{banned ? "recover@telegram.org" : "login@stel.com"});
                 if (banned) {
                     mailer.putExtra(Intent.EXTRA_SUBJECT, "Banned phone number: " + phoneNumber);
-                    mailer.putExtra(Intent.EXTRA_TEXT, "I'm trying to use my mobile phone number: " + phoneNumber + "\nBut Nnngram says it's banned. Please help.\n\nApp version: " + version + "\nOS version: SDK " + Build.VERSION.SDK_INT + "\nDevice Name: " + Build.MANUFACTURER + Build.MODEL + "\nLocale: " + Locale.getDefault());
+                    mailer.putExtra(Intent.EXTRA_TEXT, "I'm trying to use my mobile phone number: " + phoneNumber + "\nBut Kaguram says it's banned. Please help.\n\nApp version: " + version + "\nOS version: SDK " + Build.VERSION.SDK_INT + "\nDevice Name: " + Build.MANUFACTURER + Build.MODEL + "\nLocale: " + Locale.getDefault());
                 } else {
                     mailer.putExtra(Intent.EXTRA_SUBJECT, "Invalid phone number: " + phoneNumber);
-                    mailer.putExtra(Intent.EXTRA_TEXT, "I'm trying to use my mobile phone number: " + phoneNumber + "\nBut Nnngram says it's invalid. Please help.\n\nApp version: " + version + "\nOS version: SDK " + Build.VERSION.SDK_INT + "\nDevice Name: " + Build.MANUFACTURER + Build.MODEL + "\nLocale: " + Locale.getDefault());
+                    mailer.putExtra(Intent.EXTRA_TEXT, "I'm trying to use my mobile phone number: " + phoneNumber + "\nBut Kaguram says it's invalid. Please help.\n\nApp version: " + version + "\nOS version: SDK " + Build.VERSION.SDK_INT + "\nDevice Name: " + Build.MANUFACTURER + Build.MODEL + "\nLocale: " + Locale.getDefault());
                 }
                 fragment.getParentActivity().startActivity(Intent.createChooser(mailer, "Send email..."));
             } catch (Exception e) {

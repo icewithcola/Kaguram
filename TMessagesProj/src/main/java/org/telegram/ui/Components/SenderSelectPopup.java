@@ -52,9 +52,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.utils.Defines;
+import uk.kagurach.gen.Config;
 
 public class SenderSelectPopup extends ActionBarPopupWindow {
     public final static float SPRING_STIFFNESS = 750f;

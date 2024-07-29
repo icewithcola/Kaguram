@@ -121,6 +121,7 @@
     <string name="TestBackendOff">This account will connect to the production backend.</string>
     <string name="disableUndo">Disable Undo</string>
     <string name="confirmToSendMediaMessages">Confirm To Send Media Messages</string>
+    <string name="confirmToRepeat">Confirm To Repeat Message</string>
     <string name="disableInstantCamera">Disable Instant Camera</string>
     <string name="LastUpdateRecently">Last successfully checked just now.</string>
     <string name="NullgramPrivacyPolicyUrl">https://github.com/qwq233/Nullgram/wiki/Privacy-Policy</string>
@@ -328,7 +329,7 @@
     <string name="MonoCode">Code</string>
     <string name="CreateCode">Create Code</string>
     <string name="CreateCodeLanguage">Language</string>
-    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/nagram_group</string>
+    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/kaguram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">Ignore user-set reply color</string>
     <string name="ShowTitle">Show title</string>
     <string name="HideTitle">Hide title</string>

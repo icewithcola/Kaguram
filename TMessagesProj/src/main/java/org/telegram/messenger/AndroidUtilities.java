@@ -222,10 +222,9 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.utils.AlertUtil;
-import xyz.nextalone.nnngram.utils.AnalyticsUtils;
-import xyz.nextalone.nnngram.utils.TypefaceUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.AnalyticsUtils;
+import uk.kagurach.kaguram.utils.TypefaceUtils;
 
 public class AndroidUtilities {
     public final static int LIGHT_STATUS_BAR_OVERLAY = 0x0f000000, DARK_STATUS_BAR_OVERLAY = 0x33000000;

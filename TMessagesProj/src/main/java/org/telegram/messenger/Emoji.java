@@ -51,8 +51,8 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Objects;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.utils.Utils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.Utils;
 
 public class Emoji {
 

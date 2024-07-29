@@ -103,7 +103,7 @@ import javax.microedition.khronos.egl.EGLDisplay;
 import javax.microedition.khronos.egl.EGLSurface;
 import javax.microedition.khronos.opengles.GL;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 @SuppressLint("NewApi")
 public class CameraView extends FrameLayout implements TextureView.SurfaceTextureListener, CameraController.ICameraView, CameraController.ErrorCallback  {

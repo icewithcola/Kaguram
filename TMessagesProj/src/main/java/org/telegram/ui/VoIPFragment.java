@@ -125,7 +125,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import xyz.nextalone.nnngram.utils.PermissionUtils;
+import uk.kagurach.kaguram.utils.PermissionUtils;
 
 public class VoIPFragment implements VoIPService.StateListener, NotificationCenter.NotificationCenterDelegate {
 

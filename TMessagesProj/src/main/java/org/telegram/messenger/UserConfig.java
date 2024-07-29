@@ -30,8 +30,8 @@ import org.telegram.tgnet.TLRPC;
 
 import java.util.Arrays;
 
-import xyz.nextalone.nnngram.helpers.PasscodeHelper;
-import xyz.nextalone.nnngram.utils.AnalyticsUtils;
+import uk.kagurach.kaguram.helpers.PasscodeHelper;
+import uk.kagurach.kaguram.utils.AnalyticsUtils;
 
 public class UserConfig extends BaseController {
 

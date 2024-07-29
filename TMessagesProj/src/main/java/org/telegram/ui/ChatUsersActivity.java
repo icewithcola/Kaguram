@@ -97,7 +97,7 @@ import java.util.Collections;
 import java.util.Locale;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import xyz.nextalone.nnngram.utils.Log;
+import uk.kagurach.kaguram.utils.Log;
 
 public class ChatUsersActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 

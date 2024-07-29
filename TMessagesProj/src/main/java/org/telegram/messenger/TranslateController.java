@@ -23,7 +23,6 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.icu.text.Collator;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
@@ -50,7 +49,7 @@ import java.util.Objects;
 import java.util.Set;
 
 import kotlin.Unit;
-import xyz.nextalone.nnngram.helpers.TranslateHelper;
+import uk.kagurach.kaguram.helpers.TranslateHelper;
 
 public class TranslateController extends BaseController {
 

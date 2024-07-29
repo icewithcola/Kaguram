@@ -164,7 +164,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class ChannelAdminLogActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 

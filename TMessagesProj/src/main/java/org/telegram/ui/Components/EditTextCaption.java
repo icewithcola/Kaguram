@@ -57,7 +57,7 @@ import org.telegram.ui.ActionBar.Theme;
 
 import java.util.List;
 
-import xyz.nextalone.nnngram.ui.sortList.items.TextStyleItems;
+import uk.kagurach.kaguram.ui.sortList.items.TextStyleItems;
 
 public class EditTextCaption extends EditTextBoldCursor {
 

@@ -130,8 +130,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
-import xyz.nextalone.nnngram.config.ForwardContext;
-import xyz.nextalone.nnngram.ui.SendOptionsMenuLayout;
+import uk.kagurach.kaguram.config.ForwardContext;
+import uk.kagurach.kaguram.ui.SendOptionsMenuLayout;
 
 
 public class ShareAlert extends BottomSheet implements NotificationCenter.NotificationCenterDelegate {

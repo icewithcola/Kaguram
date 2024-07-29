@@ -73,7 +73,6 @@ import org.telegram.ui.Components.BulletinFactory;
 import org.telegram.ui.Components.Premium.LimitReachedBottomSheet;
 import org.telegram.ui.Components.Reactions.ReactionImageHolder;
 import org.telegram.ui.Components.Reactions.ReactionsLayoutInBubble;
-import org.telegram.ui.Components.Text;
 import org.telegram.ui.LaunchActivity;
 import org.telegram.ui.StatisticActivity;
 import org.telegram.ui.Stories.recorder.DraftsController;
@@ -98,7 +97,7 @@ import java.util.Objects;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class StoriesController {
 

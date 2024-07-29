@@ -54,18 +54,9 @@ import org.telegram.messenger.StatsController;
 import org.telegram.messenger.UserConfig;
 import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.tl.TL_stories;
-import org.telegram.ui.ActionBar.BaseFragment;
-import org.telegram.ui.ChatActivity;
-import org.telegram.ui.Components.BulletinFactory;
-import org.telegram.ui.Components.TypefaceSpan;
-import org.telegram.ui.DialogsActivity;
-import org.telegram.ui.LaunchActivity;
-import org.telegram.ui.LoginActivity;
-import org.telegram.ui.PremiumPreviewFragment;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.net.Inet4Address;
 import java.net.Inet6Address;
@@ -93,11 +84,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.net.ssl.SSLException;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.helpers.WebSocketHelper;
-import xyz.nextalone.nnngram.utils.DatabaseUtils;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.Utils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.helpers.WebSocketHelper;
+import uk.kagurach.kaguram.utils.DatabaseUtils;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.Utils;
 
 @SuppressWarnings("JavaJniMissingFunction")
 public class ConnectionsManager extends BaseController {

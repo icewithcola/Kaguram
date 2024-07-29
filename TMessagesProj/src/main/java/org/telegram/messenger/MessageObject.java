@@ -109,8 +109,8 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.utils.StringUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.StringUtils;
 
 public class MessageObject {
 

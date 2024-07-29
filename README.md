@@ -1,4 +1,4 @@
-# Nagram-reborn based on Nullgram
+# Kaguram based on Nnngram based on Nullgram
 
 ## What is Nullgram
 [![Telegram](https://img.shields.io/static/v1?label=Telegram&message=@NullgramClient&color=0088cc)](https://t.me/NullgramClient)  [![CI build](https://github.com/qwq233/Nullgram/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/qwq233/Nullgram/actions/workflows/ci.yml/)  [![Crowdin](https://badges.crowdin.net/nullgram/localized.svg)](https://crowdin.com/project/nullgram)
@@ -35,7 +35,7 @@ Then, please detail your issue (ENGLISH ONLY), create an issue or submit it to o
 
 Make sure using the issue template and writing the detailed version number I DO NOT KNOW WTF IS _I HAVE BEEN USING THE LATEST VERSION_
 
-If you experience a crash, you can use logcat to catch the log (TAG: `Nnngram` ).
+If you experience a crash, you can use logcat to catch the log (TAG: `Kaguram` ).
 
 ### Compilation Guide
 

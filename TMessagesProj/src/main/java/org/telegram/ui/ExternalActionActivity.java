@@ -48,7 +48,7 @@ import org.telegram.ui.Components.SizeNotifierFrameLayout;
 
 import java.util.ArrayList;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class ExternalActionActivity extends Activity implements INavigationLayout.INavigationLayoutDelegate {
 

@@ -45,7 +45,7 @@ import org.telegram.ui.Cells.DialogCell;
 import java.util.ArrayList;
 import java.util.List;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 /**
  * This is a utility class to add swipe to dismiss and drag & drop support to RecyclerView.

@@ -70,7 +70,6 @@ import org.telegram.ui.Cells.SharedDocumentCell;
 import org.telegram.ui.Cells.SharedLinkCell;
 import org.telegram.ui.Cells.SharedPhotoVideoCell;
 import org.telegram.ui.ChatActivity;
-import org.telegram.ui.Components.Premium.PremiumFeatureBottomSheet;
 import org.telegram.ui.DialogsActivity;
 import org.telegram.ui.FilteredSearchView;
 
@@ -78,8 +77,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.utils.Defines;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.utils.Defines;
 
 public class SearchViewPager extends ViewPagerFixed implements FilteredSearchView.UiCallback, NotificationCenter.NotificationCenterDelegate {
 

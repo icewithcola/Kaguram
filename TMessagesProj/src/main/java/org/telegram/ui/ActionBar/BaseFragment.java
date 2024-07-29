@@ -59,11 +59,11 @@ import org.telegram.ui.bots.BotWebViewAttachedSheet;
 
 import java.util.ArrayList;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.CloudStorage;
-import xyz.nextalone.nnngram.helpers.ConnectionsHelper;
-import xyz.nextalone.nnngram.utils.MessageUtils;
-import xyz.nextalone.nnngram.utils.VibrationUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.config.CloudStorage;
+import uk.kagurach.kaguram.helpers.ConnectionsHelper;
+import uk.kagurach.kaguram.utils.MessageUtils;
+import uk.kagurach.kaguram.utils.VibrationUtils;
 
 public abstract class BaseFragment {
 

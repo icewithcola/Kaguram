@@ -117,15 +117,14 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.PermissionUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.PermissionUtils;
 
 public class ChatAttachAlertPhotoLayout extends ChatAttachAlert.AttachAlertLayout implements NotificationCenter.NotificationCenterDelegate {
 

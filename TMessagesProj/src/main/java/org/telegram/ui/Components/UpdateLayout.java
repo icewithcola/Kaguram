@@ -28,7 +28,7 @@ import org.telegram.ui.IUpdateLayout;
 
 import java.io.File;
 
-import xyz.nextalone.nnngram.utils.APKUtils;
+import uk.kagurach.kaguram.utils.APKUtils;
 
 
 public class UpdateLayout extends IUpdateLayout {

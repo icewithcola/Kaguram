@@ -160,7 +160,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 
-import xyz.nextalone.nnngram.helpers.MonetHelper;
+import uk.kagurach.kaguram.helpers.MonetHelper;
 
 public class Theme {
 

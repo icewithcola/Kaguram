@@ -124,7 +124,7 @@ dependencies {
 }
 
 android {
-    defaultConfig.applicationId = "xyz.nextalone.nnngram"
+    defaultConfig.applicationId = "uk.kagurach.kaguram"
     namespace = "org.telegram.messenger"
 
     sourceSets.getByName("main") {
@@ -219,7 +219,7 @@ android {
         outputs.all {
             val abi = this.filters.find { it.filterType == FilterConfiguration.FilterType.ABI.name }?.identifier
             val output = this as? com.android.build.gradle.internal.api.BaseVariantOutputImpl
-            val outputFileName = "Nnngram-${defaultConfig.versionName}-${abiName[abi]}.apk"
+            val outputFileName = "Kaguram-${defaultConfig.versionName}-${abiName[abi]}.apk"
             output?.outputFileName = outputFileName
         }
     }

@@ -19,8 +19,8 @@
   -->
 
 <resources>
-    <string name="AppName" translatable="false">Nnngram</string>
-    <string name="AppNameBeta" translatable="false">Nnngram Beta</string>
+    <string name="AppName" translatable="false">Kaguram</string>
+    <string name="AppNameBeta" translatable="false">Kaguram Beta</string>
     <string name="LanguageName">English</string>
     <string name="English">English</string>
     <string name="LanguageNameInEnglish">English</string>
@@ -4025,6 +4025,7 @@
     <string name="NoHandleAppInstalled">You don\'t have applications that can handle the file type \'%1$s\', please install one to continue</string>
     <string name="InviteUser">This user does not have Nullgram yet, send an invitation?</string>
     <string name="AreYouSure">Are you sure?</string>
+    <string name="AreYouSureToRepeat">Are you sure to repeat?</string>
     <string name="AddToTheGroupAlertTitle">Add bot</string>
     <string name="AddToTheGroupAlertText">Do you want to add **%1$s** to the group **%2$s**?</string>
     <string name="AddToTheGroupForwardCount">Number of last messages to forward:</string>

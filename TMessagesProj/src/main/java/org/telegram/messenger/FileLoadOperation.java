@@ -41,9 +41,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.ZipException;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.utils.Defines;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.utils.Defines;
 
 public class FileLoadOperation {
 

@@ -71,9 +71,9 @@ import org.telegram.ui.ActionBar.Theme;
 
 import java.util.ArrayList;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.helpers.FolderIconHelper;
-import xyz.nextalone.nnngram.utils.Defines;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.helpers.FolderIconHelper;
+import uk.kagurach.kaguram.utils.Defines;
 
 public class FilterTabsView extends FrameLayout {
 

@@ -181,7 +181,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import xyz.nextalone.nnngram.utils.PermissionUtils;
+import uk.kagurach.kaguram.utils.PermissionUtils;
 
 public class StoryRecorder implements NotificationCenter.NotificationCenterDelegate {
 

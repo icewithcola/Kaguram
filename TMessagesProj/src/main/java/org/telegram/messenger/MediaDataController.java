@@ -108,8 +108,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.helpers.EntitiesHelper;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.helpers.EntitiesHelper;
 
 @SuppressWarnings("unchecked")
 public class MediaDataController extends BaseController {

@@ -1,39 +1,29 @@
 {
-  "project_info": {
-    "project_number": "286771851762",
-    "project_id": "nnngram-na",
-    "storage_bucket": "nnngram-na.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:286771851762:android:e00b6e88e9d3ce55ea7b6b",
-        "android_client_info": {
-          "package_name": "xyz.nextalone.nnngram"
-        }
-      },
-      "oauth_client": [
+    "project_info": {
+        "project_number": "840465504313",
+        "project_id": "kaguram-tmessageproj",
+        "storage_bucket": "kaguram-tmessageproj.appspot.com"
+    },
+    "client": [
         {
-          "client_id": "286771851762-31r6p4ka9sq7vkfe9d7sqde02iiqsrvk.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB6IJeWGrPhj3TgwMUNX3n8WTxwWYfrp2Q"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "286771851762-31r6p4ka9sq7vkfe9d7sqde02iiqsrvk.apps.googleusercontent.com",
-              "client_type": 3
+            "client_info": {
+                "mobilesdk_app_id": "1:840465504313:android:7dd3fe1bc2fc96182a55e8",
+                "android_client_info": {
+                    "package_name": "uk.kagurach.kaguram"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyDTDhij2Rfm7iJUGt942GquA6gGJCACKng"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
             }
-          ]
         }
-      }
-    }
-  ],
-  "configuration_version": "1"
+    ],
+    "configuration_version": "1"
 }

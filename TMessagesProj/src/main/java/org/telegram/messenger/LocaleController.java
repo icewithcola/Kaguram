@@ -30,11 +30,9 @@ import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.RestrictedLanguagesSelectActivity;
 import org.xmlpull.v1.XmlPullParser;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -47,8 +45,8 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.utils.Log;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.Log;
 
 public class LocaleController {
 
@@ -1406,7 +1404,7 @@ public class LocaleController {
                     return ApplicationLoader.applicationContext.getString(R.string.NullgramName);
                 }
                 case "TelegramFeaturesUrl":
-                    return "t.me/nagram_group";
+                    return "t.me/kaguram_group";
                 case "UnsupportedMedia":
                     return ApplicationLoader.applicationContext.getString(R.string.UnsupportedMediaNullgram);
                 default:
@@ -1438,11 +1436,11 @@ public class LocaleController {
         }
 
 //        if (value.contains("Telegram"))
-//            value = value.replace("Telegram", "Nnngram");
+//            value = value.replace("Telegram", "Kaguram");
         if (value.contains("TELEOFFICIAL"))
             value = value.replace("TELEOFFICIAL", "Telegram");
         if (value.contains("Nullgram"))
-            value = value.replace("Nullgram", "Nnngram");
+            value = value.replace("Nullgram", "Kaguram");
         return value;
     }
 
@@ -1622,7 +1620,7 @@ public class LocaleController {
                 value = value.replace("TELEOFFICIAL", "Telegram");
             }
             if (value.contains("Nullgram")) {
-                value = value.replace("Nullgram", "Nnngram");
+                value = value.replace("Nullgram", "Kaguram");
             }
 
             if (getInstance().currentLocale != null) {

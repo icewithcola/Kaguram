@@ -58,7 +58,7 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Timer;
 
-import xyz.nextalone.nnngram.activity.GeneralSettingActivity;
+import uk.kagurach.kaguram.activity.GeneralSettingActivity;
 
 
 public class LanguageSelectActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {

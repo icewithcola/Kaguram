@@ -154,7 +154,6 @@ import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
 
-import java.lang.reflect.Array;
 import org.telegram.messenger.AccountInstance;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.AnimationNotificationsLocker;
@@ -302,13 +301,13 @@ import java.util.Map;
 import java.util.Objects;
 
 import kotlin.Unit;
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.helpers.QrHelper;
-import xyz.nextalone.nnngram.helpers.TranslateHelper;
-import xyz.nextalone.nnngram.utils.Defines;
-import xyz.nextalone.nnngram.utils.Log;
-import xyz.nextalone.nnngram.utils.MessageUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.helpers.QrHelper;
+import uk.kagurach.kaguram.helpers.TranslateHelper;
+import uk.kagurach.kaguram.utils.Defines;
+import uk.kagurach.kaguram.utils.Log;
+import uk.kagurach.kaguram.utils.MessageUtils;
 
 @SuppressLint("WrongConstant")
 @SuppressWarnings("unchecked")

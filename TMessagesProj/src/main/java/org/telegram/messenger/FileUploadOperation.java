@@ -25,7 +25,7 @@ import java.io.RandomAccessFile;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class FileUploadOperation {
 

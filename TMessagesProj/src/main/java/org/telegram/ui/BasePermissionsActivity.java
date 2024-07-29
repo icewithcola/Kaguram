@@ -21,7 +21,7 @@ import org.telegram.ui.ActionBar.AlertDialog;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AlertsCreator;
 
-import xyz.nextalone.nnngram.utils.PermissionUtils;
+import uk.kagurach.kaguram.utils.PermissionUtils;
 
 public class BasePermissionsActivity extends FragmentActivity {
     public final static int REQUEST_CODE_GEOLOCATION = 2,

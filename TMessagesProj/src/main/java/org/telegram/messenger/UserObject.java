@@ -15,7 +15,7 @@ import androidx.annotation.NonNull;
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.tgnet.TLRPC;
 
-import xyz.nextalone.nnngram.utils.StringUtils;
+import uk.kagurach.kaguram.utils.StringUtils;
 
 public class UserObject {
 

@@ -113,7 +113,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
 import java.util.stream.Collectors;
 
-import xyz.nextalone.gen.Config;
+import uk.kagurach.gen.Config;
 
 public class MessagesController extends BaseController implements NotificationCenter.NotificationCenterDelegate {
 

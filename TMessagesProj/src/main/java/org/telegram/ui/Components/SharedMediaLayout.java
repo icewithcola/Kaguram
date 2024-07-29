@@ -166,9 +166,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Objects;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.utils.Defines;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.config.ConfigManager;
+import uk.kagurach.kaguram.utils.Defines;
 
 @SuppressWarnings("unchecked")
 public class SharedMediaLayout extends FrameLayout implements NotificationCenter.NotificationCenterDelegate, DialogCell.DialogCellDelegate {

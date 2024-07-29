@@ -120,7 +120,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import xyz.nextalone.nnngram.helpers.StickerHelper;
+import uk.kagurach.kaguram.helpers.StickerHelper;
 
 public class StickersAlert extends BottomSheet implements NotificationCenter.NotificationCenterDelegate {
 

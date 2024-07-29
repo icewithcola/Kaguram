@@ -42,7 +42,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.HapticFeedbackConstants;
 import android.view.KeyEvent;
@@ -87,9 +86,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.utils.VibrationUtils;
-import xyz.nextalone.nnngram.utils.VibrationUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.VibrationUtils;
 
 public class ActionBarLayout extends FrameLayout implements INavigationLayout, FloatingDebugProvider {
 

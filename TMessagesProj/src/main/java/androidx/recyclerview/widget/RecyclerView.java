@@ -97,10 +97,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import xyz.nextalone.gen.Config;
-import xyz.nextalone.nnngram.config.ConfigManager;
-import xyz.nextalone.nnngram.utils.Defines;
-import xyz.nextalone.nnngram.utils.VibrationUtils;
+import uk.kagurach.gen.Config;
+import uk.kagurach.kaguram.utils.VibrationUtils;
 
 /**
  * A flexible view for providing a limited window into a large data set.

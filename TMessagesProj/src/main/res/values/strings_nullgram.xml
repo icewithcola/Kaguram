@@ -19,9 +19,9 @@
   -->
 
 <resources>
-    <string name="NullgramName" translatable="false">Nnngram</string>
-    <string name="NullgramPushService">Nullgram Push Service</string>
-    <string name="NullSettings">Nullgram Settings</string>
+    <string name="NullgramName" translatable="false">Kaguram</string>
+    <string name="NullgramPushService">Kaguram Push Service</string>
+    <string name="NullSettings">Kaguram Settings</string>
     <string name="OfficialChannel">Official Channel</string>
     <string name="Chat">Chat</string>
     <string name="Experiment">Experiment</string>
@@ -29,7 +29,7 @@
     <string name="ViewSourceCode">View Source Code</string>
     <string name="Categories">Categories</string>
     <string name="About">About</string>
-    <string name="OfficialChannelName" translatable="false">nagram_group</string>
+    <string name="OfficialChannelName" translatable="false">kaguram_group</string>
     <string name="noAvailableUpdate">No Update.</string>
     <string name="updateAvailable">New Update Available</string>
     <string name="variantsNotFound">Release variants fail to match automatically.\nPlease download manually from GitHub.</string>
@@ -125,6 +125,7 @@
     <string name="TestBackendOff">This account will connect to the production backend.</string>
     <string name="disableUndo">Disable Undo</string>
     <string name="confirmToSendMediaMessages">Confirm To Send Media Messages</string>
+    <string name="confirmToRepeat">*(Unstable) Confirm To Repeat Message</string>
     <string name="disableInstantCamera">Disable Instant Camera</string>
     <string name="LastUpdateRecently">Last successfully checked just now.</string>
     <string name="NullgramPrivacyPolicyUrl">https://github.com/qwq233/Nullgram/wiki/Privacy-Policy</string>
@@ -333,7 +334,7 @@
     <string name="MonoCode">Code</string>
     <string name="CreateCode">Create Code</string>
     <string name="CreateCodeLanguage">Language</string>
-    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/nagram_group</string>
+    <string name="UnsupportedMediaNullgram">This message is not supported on your version of Nullgram. Update the app to view: https://t.me/kaguram_group</string>
     <string name="ignoreUserSpecifiedReplyColor">Ignore user-set reply color</string>
     <string name="ShowTitle">Show title</string>
     <string name="HideTitle">Hide title</string>
