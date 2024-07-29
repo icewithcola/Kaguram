@@ -74,7 +74,6 @@ public class MainSettingActivity extends BaseActivity {
 
     private int aboutRow;
     private int channelRow;
-    private int websiteRow;
     private int sourceCodeRow;
     private int licenseRow;
     private int about2Row;
@@ -110,8 +109,6 @@ public class MainSettingActivity extends BaseActivity {
             presentFragment(new ExperimentSettingActivity(sensitiveEnabled, sensitiveCanChange));
         } else if (position == channelRow) {
             MessagesController.getInstance(currentAccount).openByUserName(LocaleController.getString("OfficialChannelName", R.string.OfficialChannelName), this, 1);
-        } else if (position == websiteRow) {
-            Browser.openUrl(getParentActivity(), "https://kagurach.uk");
         } else if (position == sourceCodeRow) {
             Browser.openUrl(getParentActivity(), "https://github.com/icewithcola/kaguram");
         } else if (position == licenseRow) {
@@ -231,7 +228,6 @@ public class MainSettingActivity extends BaseActivity {
 
         aboutRow = addRow();
         channelRow = addRow();
-        websiteRow = addRow();
         sourceCodeRow = addRow();
         licenseRow = addRow();
         about2Row = addRow();
@@ -276,8 +272,6 @@ public class MainSettingActivity extends BaseActivity {
                     TextSettingsCell textCell = (TextSettingsCell) holder.itemView;
                     if (position == channelRow) {
                         textCell.setTextAndValue(LocaleController.getString("OfficialChannel", R.string.OfficialChannel), "@" + LocaleController.getString("OfficialChannelName", R.string.OfficialChannelName), true);
-                    } else if (position == websiteRow) {
-                        textCell.setTextAndValue(LocaleController.getString("OfficialSite", R.string.OfficialSite), "nextalone.xyz", true);
                     } else if (position == sourceCodeRow) {
                         textCell.setTextAndValue(LocaleController.getString("ViewSourceCode", R.string.ViewSourceCode), "GitHub", true);
                     } else if (position == licenseRow) {

@@ -1404,7 +1404,7 @@ public class LocaleController {
                     return ApplicationLoader.applicationContext.getString(R.string.NullgramName);
                 }
                 case "TelegramFeaturesUrl":
-                    return "t.me/kaguram_group";
+                    return "t.me/KaguramOfficial";
                 case "UnsupportedMedia":
                     return ApplicationLoader.applicationContext.getString(R.string.UnsupportedMediaNullgram);
                 default:
