@@ -31941,10 +31941,9 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                 if (Config.confirmToRepeat){
                     MessageObject selObj = selectedObject;
                     MessageObject.GroupedMessages selObjGroup = selectedObjectGroup;
-                    MessageObject msgObj = getMessageUtils().getMessageForRepeat(selObj, selObjGroup);
                     AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity(), themeDelegate);
                     builder.setMessage(LocaleController.getString("AreYouSureToRepeat", R.string.AreYouSureToRepeat));
-                    builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), (__, ___) -> processRepeatMessage(msgObj,selObj,selObjGroup));
+                    builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), (__, ___) -> processRepeatMessage(selObj,selObjGroup));
                     builder.setNegativeButton(LocaleController.getString("Cancel", R.string.Cancel), null );
                     showDialog(builder.create());
                 } else {
@@ -40231,7 +40230,8 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         return processRepeatMessage(asCopy, false);
     }
 
-    public boolean processRepeatMessage(MessageObject messageObject,MessageObject selectedObject,MessageObject.GroupedMessages selectedObjectGroup){ // Fix for confirm repeat
+    public boolean processRepeatMessage(MessageObject selectedObject,MessageObject.GroupedMessages selectedObjectGroup){ // Fix for confirm repeat
+        MessageObject messageObject = getMessageUtils().getMessageForRepeat(selectedObject, selectedObjectGroup);
         if (messageObject != null && (isThreadChat() && !isTopic) || getMessagesController().isChatNoForwards(currentChat)) {
             var replyToMsg = threadMessageObject;
             if (messageObject.isAnyKindOfSticker()
