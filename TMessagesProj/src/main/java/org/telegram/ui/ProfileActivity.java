@@ -11664,7 +11664,7 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
                         textCell.setText(LocaleController.getString("ReportUserLocation", R.string.ReportUserLocation), false);
                         textCell.setColors(-1, Theme.key_text_RedRegular);
                     } else if (position == nullRow) {
-                        textCell.setTextAndIcon(LocaleController.getString("kaguramsettings", R.string.NullgramName), R.drawable.msg_settings, false);
+                        textCell.setTextAndIcon(LocaleController.getString("NullSettings", R.string.NullSettings), R.drawable.msg_settings, false);
                     } else if (position == languageRow) {
                         textCell.setTextAndValueAndIcon(LocaleController.getString("Language", R.string.Language), LocaleController.getCurrentLanguageName(), false, R.drawable.msg2_language, false);
                         textCell.setImageLeft(23);
