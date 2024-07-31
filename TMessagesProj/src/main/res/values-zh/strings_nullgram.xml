@@ -123,7 +123,7 @@
     <string name="TestBackendOff">使用生产服务器登录账号</string>
     <string name="disableUndo">禁用撤消操作</string>
     <string name="confirmToSendMediaMessages">强制需确认以发送媒体消息</string>
-        <string name="confirmToRepeat">*(不稳定) 复读前确认</string>
+    <string name="confirmToRepeat">复读前确认</string>
     <string name="disableInstantCamera">禁用即时相机</string>
     <string name="LastUpdateRecently">最后一次检查刚刚完成。</string>
     <string name="NullgramPrivacyPolicyUrl">https://github.com/qwq233/Nullgram/wiki/Privacy-Policy</string>
