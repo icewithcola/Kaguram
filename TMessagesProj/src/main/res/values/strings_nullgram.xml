@@ -126,6 +126,7 @@
     <string name="disableUndo">Disable Undo</string>
     <string name="confirmToSendMediaMessages">Confirm To Send Media Messages</string>
     <string name="confirmToRepeat">Confirm To Repeat Message</string>
+    <string name="alwaysSearchCurrentChat">Always search in current chat or channel on default</string>
     <string name="disableInstantCamera">Disable Instant Camera</string>
     <string name="LastUpdateRecently">Last successfully checked just now.</string>
     <string name="NullgramPrivacyPolicyUrl">https://github.com/qwq233/Nullgram/wiki/Privacy-Policy</string>

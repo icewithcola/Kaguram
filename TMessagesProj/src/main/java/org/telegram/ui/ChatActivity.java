@@ -32945,7 +32945,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         if (searchUserButton != null) {
             searchUserButton.setVisibility(View.GONE);
         }
-        if (ChatObject.isChannelAndNotMegaGroup(currentChat) && ChatObject.isPublic(currentChat) && searchingHashtag != null) {
+        if (!Config.alwaysSearchCurrentChat && ChatObject.isChannelAndNotMegaGroup(currentChat) && ChatObject.isPublic(currentChat) && searchingHashtag != null) {
             defaultSearchPage = 2;
         } else {
             defaultSearchPage = 0;
