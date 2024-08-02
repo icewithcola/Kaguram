@@ -102,6 +102,6 @@ def sendMetadata(changesID, startID):
 if __name__ == "__main__":
     apk_path = "./apks"
     changesID = sendMetadataDesc()
-    sendApkToChat(apk_path)
+    # sendApkToChat(apk_path)
     startID = sendAPKs(apk_path)
     sendMetadata(changesID, startID)
