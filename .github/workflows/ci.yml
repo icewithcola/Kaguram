@@ -147,9 +147,6 @@ jobs:
         run: |
           chmod +x telegram-bot-api-binary
           ./telegram-bot-api-binary --api-id=21724 --api-hash=3e0cb5efcd52300aec5994fdfc5bdc16 --local 2>&1 > /dev/null &
-          curl https://raw.githubusercontent.com/PreviousAlone/ActionScript/main/uploadCI.py -o uploadCI.py
-          sed -i "s/\"chat_id\".*/\"chat_id\": ${{ secrets.TELEGRAM_CHATID }},/g" ./uploadCI.py
-          sed -i "s/Nnngram/Kaguram/g" ./uploadCI.py
           python uploadCI.py
         env:
             CHAT_ID: ${{ secrets.TELEGRAM_CHATID }}

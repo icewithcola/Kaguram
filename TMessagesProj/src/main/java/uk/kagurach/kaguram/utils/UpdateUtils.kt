@@ -152,12 +152,12 @@ object UpdateUtils {
     private const val maxReadCount = 50
 //    private const val stableMetadataChannelID: Long = 1514826137
 //    private const val stableMetadataChannelName = "NullgramMetaData"
-    private const val previewMetadataChannelID: Long = 2135305446
-    private const val previewMetadataChannelName = "NnngramMetaData"
+    private const val previewMetadataChannelID: Long = 2204183834
+    private const val previewMetadataChannelName = "kagurammetadata"
 //    private const val stableChannelAPKsID: Long = 1645976613
 //    private const val stableChannelAPKsName = "NullgramAPKs"
-    private const val previewChannelAPKsID: Long = 1848519901
-    private const val previewChannelAPKsName = "Nnngram"
+    private const val previewChannelAPKsID: Long = 2237925561
+    private const val previewChannelAPKsName = "KaguramOfficial"
 
     @JvmStatic
     fun retrieveUpdateMetadata(callback: (UpdateMetadata?, Boolean) -> Unit) {
