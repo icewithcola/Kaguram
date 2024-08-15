@@ -31,8 +31,8 @@ public class BuildVars {
     public static boolean LOGS_ENABLED = true;
     public static boolean USE_CLOUD_STRINGS = true;
     public static boolean NO_SCOPED_STORAGE = Build.VERSION.SDK_INT <= 29;
-    public static final int BUILD_VERSION = 4945;
-    public static final String BUILD_VERSION_STRING = "10.14.7";
+    public static final int BUILD_VERSION = 5143;
+    public static final String BUILD_VERSION_STRING = "11.0.0";
     public static final int APP_ID = 9571241;
     public static final String APP_HASH = "2a538d1f0ae27036cefb5294deb1df4e";
     public static final String APPCENTER_HASH = "PLACEHOLDER";

@@ -143,6 +143,7 @@ public class ChatSettingActivity extends BaseActivity {
     private int disableAutoPipRow;
     private int sendMp4DocumentAsVideoRow;
     private int alwaysSearchCurrentChatRow;
+    private int sendLargePhotoRow;
     private int chat2Row;
 
     private int markdownRow;
@@ -407,76 +408,6 @@ public class ChatSettingActivity extends BaseActivity {
             }
         } else if (position == messageFiltersRow) {
             createMessageFilterSetter(this, getContext(), resourcesProvider);
-        } else if (position == doNotUnarchiveBySwipeRow) {
-            Config.toggleDoNotUnarchiveBySwipe();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.doNotUnarchiveBySwipe);
-            }
-        } else if (position == hideInputFieldBotButtonRow) {
-            Config.toggleHideInputFieldBotButton();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.hideInputFieldBotButton);
-            }
-        } else if (position == hideMessageSeenTooltipRow) {
-            Config.toggleHideMessageSeenTooltip();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.hideMessageSeenTooltip);
-            }
-        } else if (position == disableNotificationBubbleRow) {
-            Config.toggleDisableNotificationBubble();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.disableNotificationBubble);
-            }
-        } else if (position == showOnlineStatusRow) {
-            Config.toggleShowOnlineStatus();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.showOnlineStatus);
-            }
-        } else if (position == disablePhotoSideActionRow) {
-            Config.toggleDisablePhotoSideAction();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.disablePhotoSideAction);
-            }
-        } else if (position == mergeMessageRow) {
-            Config.toggleMergeMessage();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.mergeMessage);
-            }
-        } else if (position == filterZalgoRow) {
-            Config.toggleFilterZalgo();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.filterZalgo);
-            }
-        } else if (position == hideKeyboardWhenScrollingRow) {
-            Config.toggleHideKeyboardWhenScrolling();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.hideKeyboardWhenScrolling);
-            }
-        } else if (position == searchInPlaceRow) {
-            Config.toggleSearchInPlace();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.searchInPlace);
-            }
-        } else if (position == disableChannelMuteButtonRow) {
-            Config.toggleDisableChannelMuteButton();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.disableChannelMuteButton);
-            }
-        } else if (position == disableAutoPipRow) {
-            Config.toggleDisableAutoPip();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.disableAutoPip);
-            }
-        } else if (position == sendMp4DocumentAsVideoRow) {
-            Config.toggleSendMp4DocumentAsVideo();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.sendMp4DocumentAsVideo);
-            }
-        } else if (position == alwaysSearchCurrentChatRow) {
-            Config.toggleAlwaysSearchCurrentChat();
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(Config.alwaysSearchCurrentChat);
-            }
         }
     }
 
@@ -547,7 +478,9 @@ public class ChatSettingActivity extends BaseActivity {
         disableAutoPipRow = addRow("disableAutoPip");
         sendMp4DocumentAsVideoRow = addRow("sendMp4DocumentAsVideo");
         alwaysSearchCurrentChatRow = addRow("alwaysSearchCurrentChat");
+        sendLargePhotoRow = addRow("sendLargePhoto");
         chat2Row = addRow();
+
         markdownRow = addRow();
         markdownDisableRow = addRow("markdownDisabled");
         markdownParserRow = addRow("markdownParser");
@@ -1245,24 +1178,24 @@ public class ChatSettingActivity extends BaseActivity {
             return super.performAccessibilityAction(action, arguments) || sizeBar.getSeekBarAccessibilityDelegate().performAccessibilityActionInternal(this, action, arguments);
         }
     }
-    
+
     public class GifSizeCell extends FrameLayout {
-        
+
         private final SeekBarView sizeBar;
         private final int startGifSize = 50;
         private final int endGifSize = 100;
-        
+
         private final TextPaint textPaint;
         private int lastWidth;
-        
+
         public GifSizeCell(Context context) {
             super(context);
-            
+
             setWillNotDraw(false);
-            
+
             textPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             textPaint.setTextSize(AndroidUtilities.dp(16));
-            
+
             sizeBar = new SeekBarView(context);
             sizeBar.setReportChanges(true);
             sizeBar.setDelegate(new SeekBarView.SeekBarViewDelegate() {
@@ -1272,22 +1205,22 @@ public class ChatSettingActivity extends BaseActivity {
                     ConfigManager.putInt(Defines.gifSize, (int) (startGifSize + (endGifSize - startGifSize) * progress));
                     GifSizeCell.this.invalidate();
                 }
-                
+
                 @Override
                 public void onSeekBarPressed(boolean pressed) {
-                
+
                 }
             });
             sizeBar.setImportantForAccessibility(IMPORTANT_FOR_ACCESSIBILITY_NO);
             addView(sizeBar, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, 38, Gravity.LEFT | Gravity.TOP, 9, 5, 43, 11));
         }
-        
+
         @Override
         protected void onDraw(Canvas canvas) {
             textPaint.setColor(Theme.getColor(Theme.key_windowBackgroundWhiteValueText));
             canvas.drawText(ConfigManager.getIntOrDefault(Defines.gifSize, 100) + "%", getMeasuredWidth() - AndroidUtilities.dp(45), AndroidUtilities.dp(28), textPaint);
         }
-        
+
         @Override
         protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
@@ -1297,26 +1230,26 @@ public class ChatSettingActivity extends BaseActivity {
                 lastWidth = width;
             }
         }
-        
+
         @Override
         public void invalidate() {
             super.invalidate();
             lastWidth = -1;
             sizeBar.invalidate();
         }
-        
+
         @Override
         public void onInitializeAccessibilityEvent(AccessibilityEvent event) {
             super.onInitializeAccessibilityEvent(event);
             sizeBar.getSeekBarAccessibilityDelegate().onInitializeAccessibilityEvent(this, event);
         }
-        
+
         @Override
         public void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo info) {
             super.onInitializeAccessibilityNodeInfo(info);
             sizeBar.getSeekBarAccessibilityDelegate().onInitializeAccessibilityNodeInfoInternal(this, info);
         }
-        
+
         @Override
         public boolean performAccessibilityAction(int action, Bundle arguments) {
             return super.performAccessibilityAction(action, arguments) || sizeBar.getSeekBarAccessibilityDelegate().performAccessibilityActionInternal(this, action, arguments);
