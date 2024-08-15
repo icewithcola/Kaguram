@@ -20035,12 +20035,12 @@ public class MessagesController extends BaseController implements NotificationCe
         }
     }
 
-    public static String getRestrictionReason(ArrayList<TLRPC.TL_restrictionReason> reasons) {
+    public static String getRestrictionReason(ArrayList<TLRPC.RestrictionReason> reasons) {
         if (reasons.isEmpty() || Config.showHiddenSettings) {
             return null;
         }
         for (int a = 0, N = reasons.size(); a < N; a++) {
-            TLRPC.TL_restrictionReason reason = reasons.get(a);
+            TLRPC.RestrictionReason reason = reasons.get(a);
             if ("all".equals(reason.platform)) {
                 return reason.text;
             }
