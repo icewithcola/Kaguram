@@ -121,6 +121,8 @@ dependencies {
     implementation(project(":libs:tcp2ws"))
     implementation(project(":libs:pangu"))
     ksp(project(":libs:ksp"))
+
+    //debugImplementation(libs.leakcanary.android)
 }
 
 android {
