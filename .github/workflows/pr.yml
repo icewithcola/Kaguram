@@ -24,10 +24,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-      - name: Check out submodules
-        run: |
-          git -c submodule."libs/rust".update=none submodule update --init --recursive
+            submodules: 'recursive'
+            fetch-depth: 0
       - name: Setup cmake
         uses: jwlawson/actions-setup-cmake@v1.12
         with:
@@ -72,11 +70,5 @@ jobs:
             echo "sdk.dir=${ANDROID_HOME}" >> local.properties
       - name: Debug Build
         run: |
-          sed '/signingConfig =/d' TMessagesProj/build.gradle.kts > TMessagesProj/build.gradle.kts.tmp
-          sed '/google.services/d' TMessagesProj/build.gradle.kts.tmp > TMessagesProj/build.gradle.kts
-          sed '/google.services/d' build.gradle.kts.tmp > build.gradle.kts
-          cp build.gradle.kts.tmp build.gradle.kts
+          cp TMessagesProj/build.gradle.kts.tmp TMessagesProj/build.gradle.kts
           ./gradlew TMessagesProj:assembleDebug
-        
-
-  
