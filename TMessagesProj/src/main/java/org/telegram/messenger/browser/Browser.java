@@ -52,6 +52,7 @@ import org.telegram.messenger.support.customtabs.CustomTabsSession;
 import org.telegram.messenger.support.customtabsclient.shared.CustomTabsHelper;
 import org.telegram.messenger.support.customtabsclient.shared.ServiceConnection;
 import org.telegram.messenger.support.customtabsclient.shared.ServiceConnectionCallback;
+import org.telegram.messenger.voip.Instance;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.ActionBarLayout;
@@ -59,6 +60,7 @@ import org.telegram.ui.ActionBar.AlertDialog;
 import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.ActionBar.BottomSheetTabs;
 import org.telegram.ui.ActionBar.Theme;
+import org.telegram.ui.BubbleActivity;
 import org.telegram.ui.LaunchActivity;
 import org.telegram.ui.web.RestrictedDomainsList;
 
@@ -364,7 +366,7 @@ public class Browser {
                 }
                 uri = Uri.parse("https://" + finalPath);
             }
-            if (allowCustom && !SharedConfig.inappBrowser && SharedConfig.customTabs && !internalUri && !scheme.equals("tel") && !isTonsite(uri.toString())) {
+            if (allowCustom && (!SharedConfig.inappBrowser || context instanceof BubbleActivity) && SharedConfig.customTabs && !internalUri && !scheme.equals("tel") && !isTonsite(uri.toString())) {
                 if (forceBrowser[0] || !openInExternalApp(context, uri.toString(), false) || !hasAppToOpen(context, uri.toString())) {
                     if (MessagesController.getInstance(currentAccount).authDomains.contains(host)) {
                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
