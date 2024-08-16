@@ -303,7 +303,7 @@ public class SharedConfig {
     public static boolean nextMediaTap = true;
     public static boolean recordViaSco = false;
     public static boolean customTabs = true;
-    public static boolean inappBrowser = true;
+    public static boolean inappBrowser = false;
     public static boolean adaptableColorInBrowser = true;
     public static boolean directShare = true;
     public static boolean inappCamera = true;

@@ -19939,7 +19939,7 @@ public class PhotoViewer implements NotificationCenter.NotificationCenterDelegat
                 progressDialog.dismiss();
             } catch (Throwable ignore) {
             }
-            TranslateHelper.handleTranslationError(parentFragment, e, this::translateCaption, resourcesProvider);
+            TranslateHelper.handleTranslationError(parentActivity, e, () -> translateCaption(), resourcesProvider);
             return Unit.INSTANCE;
         });
     }
