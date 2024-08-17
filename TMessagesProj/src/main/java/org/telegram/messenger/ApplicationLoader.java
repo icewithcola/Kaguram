@@ -174,7 +174,7 @@ public class ApplicationLoader extends Application {
         } catch (Exception e) {
             FileLog.e(e);
         }
-        return new File("/data/data/uk.kagurach.kaguram/files");
+        return new File("/data/data/top.qwq2333.nullgram/files");
     }
 
     public static void postInitApplication() {
@@ -316,7 +316,7 @@ public class ApplicationLoader extends Application {
 
         applicationHandler = new Handler(applicationContext.getMainLooper());
 
-        org.osmdroid.config.Configuration.getInstance().setUserAgentValue("Kaguram" + BuildConfig.VERSION_NAME);
+        org.osmdroid.config.Configuration.getInstance().setUserAgentValue("Nullgram" + BuildConfig.VERSION_NAME);
         org.osmdroid.config.Configuration.getInstance().setOsmdroidBasePath(new File(ApplicationLoader.applicationContext.getCacheDir(), "osmdroid"));
 
 
