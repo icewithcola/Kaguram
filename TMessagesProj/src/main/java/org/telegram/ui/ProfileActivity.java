@@ -6407,9 +6407,6 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
             items.add(LocaleController.getString("Hide", R.string.Hide));
             actions.add(PHONE_OPTION_HIDE);
 
-            icons.add(R.drawable.msg_archive_hide);
-            items.add(LocaleController.getString("Hide", R.string.Hide));
-            actions.add(PHONE_OPTION_HIDE);
 
             AtomicReference<ActionBarPopupWindow> popupWindowRef = new AtomicReference<>();
             ActionBarPopupWindow.ActionBarPopupWindowLayout popupLayout = new ActionBarPopupWindow.ActionBarPopupWindowLayout(getContext(), R.drawable.popup_fixed_alert, resourcesProvider) {
