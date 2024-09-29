@@ -53,7 +53,6 @@ object Log {
         appendText("Device: ${Build.MODEL}\n")
         appendText("Manufacturer: ${Build.MANUFACTURER}\n")
         appendText("OS: ${Build.VERSION.SDK_INT}\n")
-        appendText("isPlay: ${BuildConfig.isPlay}\n")
         appendText("ABI: ${Utils.abi}\n")
         for (i in 0 until  UserConfig.MAX_ACCOUNT_COUNT) {
             UserConfig.getInstance(i)?.let {

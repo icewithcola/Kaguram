@@ -352,7 +352,16 @@
     <string name="SaveToDownloadCount_few">Saving %1$d files to Download</string>
     <string name="SaveToDownloadCount_many">Saving %1$d files to Download</string>
     <string name="SaveToDownloadCount_other">Saving %1$d files to Download</string>
-  <string name="InvalidPattern">Invalid Pattern</string>
+    <string name="InvalidPattern">Invalid Pattern</string>
+    <string name="sendLargePhoto">Send large photo</string>
+    <string name="Details">Details</string>
+    <string name="DontAskAgain">Don\'t ask again</string>
+    <string name="NoFilesFound">No files found</string>
+    <string name="NoFilesInfo">No file\'s info</string>
+    <string name="SearchRecentFiles">Search recent files</string>
+    <string name="FileUploadLimit">File must not exceed %1$s</string>
+    <string name="ViewStats">View stats</string>
+    <string name="NoFilesFoundInfo">No results for **%1$s** in the current folder.</string>
 
     <string name="AppIconGoogle">Google</string>
     <string name="AppIconColorful">Colorful</string>
@@ -381,4 +390,6 @@
     <string name="disableChannelMuteButton">Disable channel mute button</string>
     <string name="disableAutoPip">Disable auto PIP</string>
     <string name="sendMp4DocumentAsVideo">Send MP4 document as video</string>
+    
+    <string name="AreYouSureToRepeat">Are you sure to repeat</string>
 </resources>

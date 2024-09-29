@@ -359,9 +359,6 @@ public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
         if (Config.showCalls) {
             items.add(new Item(10, LocaleController.getString("Calls", R.string.Calls), callsIcon));
         }
-        if (Config.showPeopleNearby && hasGps) {
-            items.add(new Item(12, LocaleController.getString("PeopleNearby", R.string.PeopleNearby), peopleNearbyIcon));
-        }
         if (Config.showSavedMessages) {
             items.add(new Item(11, LocaleController.getString("SavedMessages", R.string.SavedMessages), savedIcon));
         }

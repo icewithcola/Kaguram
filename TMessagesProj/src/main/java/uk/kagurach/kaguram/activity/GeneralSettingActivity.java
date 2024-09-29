@@ -865,7 +865,6 @@ public class GeneralSettingActivity extends BaseActivity {
                 case 0 -> textCell.setTextAndCheck(LocaleController.getString("NewGroup", R.string.NewGroup), Config.showNewGroup,  false);
                 case 1 -> textCell.setTextAndCheck(LocaleController.getString("Contacts", R.string.Contacts), Config.showContacts,  false);
                 case 2 -> textCell.setTextAndCheck(LocaleController.getString("Calls", R.string.Calls), Config.showCalls,  false);
-                case 3 -> textCell.setTextAndCheck(LocaleController.getString("PeopleNearby", R.string.PeopleNearby), Config.showPeopleNearby,  false);
                 case 4 -> textCell.setTextAndCheck(LocaleController.getString("SavedMessages", R.string.SavedMessages), Config.showSavedMessages,  false);
                 case 5 -> textCell.setTextAndCheck(LocaleController.getString("ArchivedChats", R.string.ArchivedChats), Config.showArchivedChats, false);
                 case 6 -> textCell.setTextAndCheck(LocaleController.getString("ChangeEmojiStatus", R.string.ChangeEmojiStatus), Config.showChangeEmojiStatus,  false);
