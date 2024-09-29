@@ -26,13 +26,13 @@ import android.os.Build;
 public class BuildVars {
 
     public static final boolean DEBUG_VERSION = true;
-    public static boolean DEBUG_PRIVATE_VERSION = true;
+    public static boolean DEBUG_PRIVATE_VERSION = false;
     public static boolean CHECK_UPDATES = true;
     public static boolean LOGS_ENABLED = true;
     public static boolean USE_CLOUD_STRINGS = true;
     public static boolean NO_SCOPED_STORAGE = Build.VERSION.SDK_INT <= 29;
-    public static final int BUILD_VERSION = 5143;
-    public static final String BUILD_VERSION_STRING = "11.0.0";
+    public static final int BUILD_VERSION = 5244;
+    public static final String BUILD_VERSION_STRING = "11.1.3";
     public static final int APP_ID = 9571241;
     public static final String APP_HASH = "2a538d1f0ae27036cefb5294deb1df4e";
     public static final String APPCENTER_HASH = "PLACEHOLDER";
