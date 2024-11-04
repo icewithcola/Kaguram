@@ -784,7 +784,7 @@ public class ChatSettingActivity extends BaseActivity {
         linearLayoutInviteContainer.setOrientation(LinearLayout.VERTICAL);
         linearLayout.addView(linearLayoutInviteContainer, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT));
 
-        int count = 9 + 2;
+        int count = 8 + 1 + 1;
         for (int a = 0; a < count; a++) {
             TextCheckCell textCell = new TextCheckCell(context);
             switch (a) {
@@ -881,6 +881,11 @@ public class ChatSettingActivity extends BaseActivity {
                     case 6 + 1 + 1: {
                         Config.toggleShowCopyPhoto();
                         textCell.setChecked(Config.showCopyPhoto);
+                        break;
+                    }
+                    case 7: {
+                        Config.toggleShowReport();
+                        textCell.setChecked(Config.showRepeat);
                         break;
                     }
                     case 7 + 1 + 1: {

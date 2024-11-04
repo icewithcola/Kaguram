@@ -117,7 +117,7 @@ object Log {
     }
     @JvmStatic
     fun shareLog(context: Context) {
-        ShareUtil.shareFile(context, logFile)
+        if (logFile.exists()) ShareUtil.shareFile(context, logFile)
     }
 
     @JvmStatic

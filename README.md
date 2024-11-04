@@ -8,7 +8,6 @@
 Nullgram is an **free and open source** third-party Telegram client, based on the official source code for [Telegram App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
 
 ## Why Nullgram
-
 Due to the fragmentation of the NekoX and Nekogram communities, and the serious problems with the main developers of NekoX and Nekogram[^1], I decided to make Nullgram to integrate both of their functions to avoid these problems.
 
 Null used in computer programming for an uninitialized, undefined, empty, or meaningless value.
