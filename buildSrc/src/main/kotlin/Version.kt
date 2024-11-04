@@ -23,7 +23,7 @@ import org.gradle.api.JavaVersion
 
 object Version {
     fun findBuildToolsVersion(): String {
-        val defaultBuildToolsVersion = "33.0.0"
+        val defaultBuildToolsVersion = "34.0.0"
         return File(System.getenv("ANDROID_HOME"), "build-tools").listFiles()?.filter { it.isDirectory }?.maxOfOrNull { it.name }?.also { println("Using build tools version $it") }
             ?: defaultBuildToolsVersion
     }
