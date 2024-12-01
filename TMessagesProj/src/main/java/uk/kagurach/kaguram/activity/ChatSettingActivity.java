@@ -883,11 +883,6 @@ public class ChatSettingActivity extends BaseActivity {
                         textCell.setChecked(Config.showCopyPhoto);
                         break;
                     }
-                    case 7: {
-                        Config.toggleShowReport();
-                        textCell.setChecked(Config.showRepeat);
-                        break;
-                    }
                     case 7 + 1 + 1: {
                         Config.toggleShowReactions();
                         textCell.setChecked(Config.showReactions);
