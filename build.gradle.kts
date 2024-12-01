@@ -40,10 +40,10 @@ val verCode = Common.getBuildVersionCode(rootProject)
 
 val verName = "v" + Version.officialVersionName + "-" + (Common.getGitHeadRefsSuffix(rootProject))
 
-val androidTargetSdkVersion by extra(34)
+val androidTargetSdkVersion by extra(35)
 val androidMinSdkVersion by extra(27)
-val androidCompileSdkVersion by extra(34)
-val androidBuildToolsVersion = Version.findBuildToolsVersion()
+val androidCompileSdkVersion by extra(35)
+val androidBuildToolsVersion by extra("34.0.0")
 val androidCompileNdkVersion = "27.0.12077973"
 
 fun Project.configureBaseExtension() {

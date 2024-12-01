@@ -34,9 +34,13 @@ public class LauncherIconController {
     }
 
     public enum LauncherIcon {
-        DEFAULT("DefaultIcon", R.drawable.icon_background_sa, R.mipmap.icon_foreground_sa, R.string.AppIconDefault),
-        // OFFICIAL("OFFICIAL", R.drawable.icon_background_sa, R.mipmap.icon_foreground_sa, R.string.Official),
-        NOX("PremiumIcon", R.drawable.icon_3_background_sa, R.mipmap.icon_3_foreground_sa, R.string.AppIconPremium);
+        DEFAULT("DefaultIcon", R.color.ic_launcher_background, R.drawable.ic_launcher_foreground, R.string.AppIconDefault),
+        OFFICIAL("OFFICIAL", R.drawable.icon_background_sa, R.mipmap.icon_foreground_sa, R.string.Official),
+        ICON1("ICON1", R.drawable.icon_1, R.drawable.icon_1, R.string.icon_1),
+        ICON2("ICON2", R.drawable.icon_2, R.drawable.icon_2, R.string.icon_2),
+        ICON3("ICON3", R.drawable.icon_3, R.drawable.icon_3, R.string.icon_3),
+        ICON4("ICON4", R.drawable.icon_4, R.drawable.icon_4, R.string.icon_4),
+        ICON5("ICON5", R.drawable.icon_5, R.drawable.icon_5, R.string.icon_5);
 
 
         public final String key;

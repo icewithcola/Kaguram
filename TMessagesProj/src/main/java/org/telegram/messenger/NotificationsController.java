@@ -2199,6 +2199,8 @@ public class NotificationsController extends BaseController {
                             peername = peerchat == null ? "" : peerchat.title;
                         }
                         return LocaleController.formatPluralStringComma("BoostingReceivedStars", (int) action.stars, peername);
+                    } else if (messageObject.messageOwner.action instanceof TLRPC.TL_messageActionPaymentRefunded) {
+                        return messageObject.messageText.toString();
                     }
                 } else {
                     if (messageObject.isMediaEmpty()) {
@@ -4092,7 +4094,7 @@ public class NotificationsController extends BaseController {
                     return;
                 }
                 if (replace) {
-                    if (chat != null) {
+                    if (chat != null && allowSummary) {
                         message = message.replace(" @ " + name, "");
                     } else {
                         if (text[0]) {

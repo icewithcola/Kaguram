@@ -239,7 +239,7 @@ public class SenderSelectPopup extends ActionBarPopupWindow {
                             senderView.title.setText(chat.title);
                         }
                         final String text;
-                        if (chat.creator && isQuickToggleAnonymousEnabled && -peerId == currentChat.id) {
+                        if (chat.creator && isQuickToggleAnonymousEnabled && ChatObject.isMegagroup(chat) && -peerId == currentChat.id) {
                             text = LocaleController.getString("SwitchToAnonymously", R.string.SwitchToAnonymously);
                         } else {
                             text = LocaleController.formatPluralString(ChatObject.isChannel(chat) && !chat.megagroup ? "Subscribers" : "Members", chat.participants_count);
